@@ -1,0 +1,10 @@
+.gitignore
+test
+package-lock.json
+bun.lock
+.DS_Store
+node_modules
+images
+src
+tsconfig.json
+tsup.config.ts

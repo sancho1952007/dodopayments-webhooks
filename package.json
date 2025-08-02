@@ -1,0 +1,29 @@
+{
+  "name": "dodopayments-webhooks",
+  "version": "1.0.0",
+  "description": "A universal webhook handling library for Dodopayments",
+  "main": "./dist/index.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/sancho1952007/dodopayments-webhooks",
+  "repository": {
+    "url": "https://github.com/sancho1952007/dodopayments-webhooks"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "dodopayments",
+    "payments"
+  ],
+  "author": "Sancho Godinho",
+  "license": "MIT",
+  "dependencies": {
+    "standardwebhooks": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
