@@ -142,6 +142,10 @@ HonoJS:
 import { Hono } from 'hono';
 const app = new Hono();
 
+const PaymentHandler = new DodopaymentsHandler({
+    signing_key: "<Your Webhook Signing Key>"
+});
+
 app.post('/your-webhook-url', async (c) => {
     try{
         const payment = await PaymentHandler.handle({
