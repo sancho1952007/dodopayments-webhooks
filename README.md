@@ -76,6 +76,8 @@ PaymentHandler.handle({
 
 <b>⚠️ Don't forget to respond some data with a 200 status code if the request was successfully completed. Otherwise, Dodopayments will send multiple requests to your webhook endpoint thinking something went wrong.</b>
 
+<b>⚠️ If you fail to process the webhook request, make sure to return a status code other than 2xx (like 200 request ok). This is because Dodopayments will assume the request was successful if the returned response code is 2xx, even if it includes the word error. So, if there was an error in processing prefer returning any other status code except 2xx. For example, you can return the status code 500 in case of internal server error.</b>
+
 <br/>
 
 ### Example
@@ -101,7 +103,7 @@ app.post('/your-webhook-url', async (req, res) => {
         res.status(200).send('OK');
     } catch (e) {
         console.log(e.name);
-        res.send('Error Occured!');
+        res.status(500).send('Error Occured!');
     }
 });
 
