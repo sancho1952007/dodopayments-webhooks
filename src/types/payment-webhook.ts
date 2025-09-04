@@ -34,6 +34,9 @@ type PaymentWebhook = {
     /** Type of card (e.g. DEBIT or CREDIT). */
     card_type?: string;
 
+    /** If payment is made using a checkout session, this field is set to the id of the session. */
+    checkout_session_id?: string;
+
     /** Timestamp when the payment was created (ISO 8601). */
     created_at: string;
 
