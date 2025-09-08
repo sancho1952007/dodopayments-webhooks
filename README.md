@@ -180,23 +180,32 @@ try{
 }
 ```
 
-#### 1. dodopay_invalid_signature
-This error name suggests that one of the following issues occured:  
+<details>
+<summary>dodopay_invalid_signature</summary>
+This error name suggests that one of the following issues occured:
+
 1. The output has been tampered. It may be a malicious attacker trying to trick your system.
 
 2. You are using an outdated/incorrect dodopayments webhooks signing key.
+</details>
 
-#### 2. dodopay_request_missing_data
+<details>
+<summary>dodopay_request_missing_data</summary>
 This error name suggests one of the following:
+
 1. Your request body is missing.
 2. Your headers object is missing.
 3. Your dodopayments signing key is not present.
+</details>
 
-#### 3. dodopay_webhook_missing_headers
-This error name suggests that the key headers of the request are missing. Following are the important headers:  
+<details>
+<summary>dodopay_webhook_missing_headers</summary>
+This error name suggests that the key headers of the request are missing. Following are the important headers:
+
 1. "webhook-id"
 2. "webhook-signature"
 3. "webhook-timestamp"
+</details>
 <br/>
 <br/>
 
