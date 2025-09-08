@@ -60,6 +60,11 @@ type SubscriptionWebhook = {
     };
 
     /**
+    * Number of remaining discount cycles if discount is applied.
+    */
+    discount_cycles_remaining?: number;
+
+    /**
      * Discount ID if a discount is applied.
      */
     discount_id?: string;
