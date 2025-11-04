@@ -48,7 +48,7 @@ const { DodopaymentsHandler } = require('dodopayments-webhooks');
 or
 
 ```javascript
-import { DodopaymentsHandler } = from 'dodopayments-webhooks';
+import { DodopaymentsHandler } from 'dodopayments-webhooks';
 ```
 
 <br/>
