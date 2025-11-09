@@ -1,17 +1,17 @@
-# Dodopayments Webooks
+# Dodo Payments Webooks
 
 ## Information
 1. What is this?  
-`dodopayments-webhooks` is a universal JavaScript library to handle webhook requests from [Dodopayments](https://dodopayments.com/).
+`dodopayments-webhooks` is a universal JavaScript library to handle webhook requests from [Dodo Payments](https://dodopayments.com/).
 
 2. What does this library do?  
-It handles all the security part for you. It also provides type data & information on what each key does for all webhook methods provided by [Dodopayments](https://dodopayments.com/).
+It handles all the security part for you. It also provides type data & information on what each key does for all webhook methods provided by [Dodo Payments](https://dodopayments.com/).
 
 3. Why did I build it?  
-I was building a project of mine using a certain backend library that [Dodopayments](https://dodopayments.com/) doesn't officially support. When time came to implement [Dodopayments](https://dodopayments.com/) webhooks, I faced a ton of issues. I had to hunt on a lot of documentation and ended up with some bad looking code, highly prone to error. This should not be the case when it comes to payments since it's a critical part of any business. Even though there are tons of JS frameworks and libraries popping up every month, [Dodopayments](https://dodopayments.com/) doesn't have a univeral way to implement their webhooks. They have limited support only for the most popular JS libraries available today. Hence, I felt the need to create a universal library to handle webhook requests for every backend library present, may it be well-known or lesser-known.
+I was building a project of mine using a certain backend library that [Dodo Payments](https://dodopayments.com/) doesn't officially support. When time came to implement [Dodo Payments](https://dodopayments.com/) webhooks, I faced a ton of issues. I had to hunt on a lot of documentation and ended up with some bad looking code, highly prone to error. This should not be the case when it comes to payments since it's a critical part of any business. Even though there are tons of JS frameworks and libraries popping up every month, [Dodo Payments](https://dodopayments.com/) doesn't have a univeral way to implement their webhooks. They have limited support only for the most popular JS libraries available today. Hence, I felt the need to create a universal library to handle webhook requests for every backend library present, may it be well-known or lesser-known.
 
-4. Is this affiliated with Dodopayments?  
-No, this library is not affiliated with [Dodopayments](https://dodopayments.com/). It's a library I created to improve DX (Developer Experience) while building with [Dodopayments](https://dodopayments.com/).
+4. Is this affiliated with Dodo Payments?  
+No, this library is not affiliated with [Dodo Payments](https://dodopayments.com/). It's a library I created to improve DX (Developer Experience) while building with [Dodo Payments](https://dodopayments.com/). Update: I am an intern at Dodo Payments now 🥳
 
 5. How can you help?  
 If you find a bug or have a suggestion, create a Github issue reporting it. If you're able to fix that bug, make a pull request.
@@ -60,7 +60,7 @@ const PaymentHandler = new DodopaymentsHandler({
 });
 ```
 
-Replace `<Your Webhook Signing Key>` with your Dodopayments webhooks secret. Check out the [Dodopayments docs](https://docs.dodopayments.com/developer-resources/webhooks) for more info.
+Replace `<Your Webhook Signing Key>` with your Dodopayments webhooks secret. Check out the [Dodo Payments docs](https://docs.dodopayments.com/developer-resources/webhooks) for more info.
 
 <br/>
 
